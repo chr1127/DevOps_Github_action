@@ -32,6 +32,8 @@ jobs:
           echo "Number of lines in test.txt: $n"
           if (( n % 2 == 0 )); then
             echo "Number of lines is even"
+            exit 0
           else
             echo "Number of lines is odd"
+            exit 1
           fi
